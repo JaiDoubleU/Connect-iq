@@ -43,6 +43,10 @@
         <settingConfig type="string" />
     </setting>
 
+    <setting propertyKey="@Properties.ShowBrandLogo" title="@Strings.ShowBrandLogoTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
     <setting propertyKey="@Properties.CustomBackgroundColor" title="@Strings.CustomBackgroundColorTitle">
         <settingConfig type="list">
             <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
