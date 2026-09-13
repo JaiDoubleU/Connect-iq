@@ -1,0 +1,100 @@
+<settings>
+
+    <setting propertyKey="@Properties.Theme" title="@Strings.ThemeTitle">
+        <settingConfig type="list">
+            <listEntry value="swiss">@Strings.ThemeSwiss</listEntry>
+            <listEntry value="swatch">@Strings.ThemeSwatch</listEntry>
+            <listEntry value="racing">@Strings.ThemeRacing</listEntry>
+            <listEntry value="monochrome">@Strings.ThemeMonochrome</listEntry>
+            <listEntry value="custom">@Strings.ThemeCustom</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.MarkerStyle" title="@Strings.MarkerStyleTitle">
+        <settingConfig type="list">
+            <listEntry value="numerals">@Strings.MarkerStyleNumerals</listEntry>
+            <listEntry value="indices">@Strings.MarkerStyleIndices</listEntry>
+            <listEntry value="dots">@Strings.MarkerStyleDots</listEntry>
+            <listEntry value="combo">@Strings.MarkerStyleCombo</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.ShowSecondHand" title="@Strings.ShowSecondHandTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.ShowDate" title="@Strings.ShowDateTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.ShowBattery" title="@Strings.ShowBatteryTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.ShowHeartRate" title="@Strings.ShowHeartRateTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.BrandName" title="@Strings.BrandNameTitle">
+        <settingConfig type="string" />
+    </setting>
+
+    <setting propertyKey="@Properties.BrandSubText" title="@Strings.BrandSubTextTitle">
+        <settingConfig type="string" />
+    </setting>
+
+    <setting propertyKey="@Properties.CustomBackgroundColor" title="@Strings.CustomBackgroundColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0xF2EFE9">@Strings.ColorOffWhite</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0x333333">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.CustomPrimaryTextColor" title="@Strings.CustomPrimaryTextColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x2B2B2B">@Strings.ColorCharcoal</listEntry>
+            <listEntry value="0x777777">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.CustomSecondaryTextColor" title="@Strings.CustomSecondaryTextColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x777777">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xC0C0C0">@Strings.ColorSilver</listEntry>
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.CustomMarkerColor" title="@Strings.CustomMarkerColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x2B2B2B">@Strings.ColorCharcoal</listEntry>
+            <listEntry value="0xC0C0C0">@Strings.ColorSilver</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.CustomHandColor" title="@Strings.CustomHandColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x2B2B2B">@Strings.ColorCharcoal</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.CustomAccentColor" title="@Strings.CustomAccentColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0xC81E1E">@Strings.ColorRed</listEntry>
+            <listEntry value="0xE8C400">@Strings.ColorYellow</listEntry>
+            <listEntry value="0x1E4FC8">@Strings.ColorBlue</listEntry>
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+        </settingConfig>
+    </setting>
+
+</settings>

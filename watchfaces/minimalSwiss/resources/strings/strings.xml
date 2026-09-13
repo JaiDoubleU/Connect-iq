@@ -1,0 +1,49 @@
+<strings>
+
+    <string id="AppName">Minimal Swiss</string>
+
+    <!-- Theme -->
+    <string id="ThemeTitle">Theme</string>
+    <string id="ThemeSwiss">Minimal Swiss</string>
+    <string id="ThemeSwatch">Swatch</string>
+    <string id="ThemeRacing">Racing</string>
+    <string id="ThemeMonochrome">Monochrome</string>
+    <string id="ThemeCustom">Custom</string>
+
+    <!-- Marker style -->
+    <string id="MarkerStyleTitle">Hour Markers</string>
+    <string id="MarkerStyleNumerals">Numerals</string>
+    <string id="MarkerStyleIndices">Indices</string>
+    <string id="MarkerStyleDots">Dots</string>
+    <string id="MarkerStyleCombo">Numerals + Indices</string>
+
+    <!-- Toggles -->
+    <string id="ShowSecondHandTitle">Show Second Hand</string>
+    <string id="ShowDateTitle">Show Date</string>
+    <string id="ShowBatteryTitle">Show Battery</string>
+    <string id="ShowHeartRateTitle">Show Heart Rate</string>
+
+    <!-- Branding -->
+    <string id="BrandNameTitle">Brand Name (blank for none)</string>
+    <string id="BrandSubTextTitle">Secondary Brand Text (optional)</string>
+
+    <!-- Custom theme colors -->
+    <string id="CustomBackgroundColorTitle">Custom: Dial Background</string>
+    <string id="CustomPrimaryTextColorTitle">Custom: Primary Text</string>
+    <string id="CustomSecondaryTextColorTitle">Custom: Secondary Text</string>
+    <string id="CustomMarkerColorTitle">Custom: Hour Markers</string>
+    <string id="CustomHandColorTitle">Custom: Hour/Minute Hands</string>
+    <string id="CustomAccentColorTitle">Custom: Accent / Second Hand</string>
+
+    <string id="ColorBlack">Black</string>
+    <string id="ColorOffWhite">Off White</string>
+    <string id="ColorWhite">White</string>
+    <string id="ColorCharcoal">Charcoal</string>
+    <string id="ColorDarkGray">Dark Gray</string>
+    <string id="ColorLightGray">Light Gray</string>
+    <string id="ColorSilver">Silver</string>
+    <string id="ColorRed">Red</string>
+    <string id="ColorYellow">Yellow</string>
+    <string id="ColorBlue">Blue</string>
+
+</strings>
