@@ -26,6 +26,7 @@
     <!-- Branding -->
     <string id="BrandNameTitle">Brand Name (blank for none)</string>
     <string id="BrandSubTextTitle">Secondary Brand Text (optional)</string>
+    <string id="ShowBrandLogoTitle">Use Logo Image Instead of Brand Name</string>
 
     <!-- Custom theme colors -->
     <string id="CustomBackgroundColorTitle">Custom: Dial Background</string>

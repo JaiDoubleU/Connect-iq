@@ -14,6 +14,11 @@
     <property id="BrandName" type="string"></property>
     <property id="BrandSubText" type="string"></property>
 
+    <!-- When true, draws Drawables.BrandLogo instead of BrandName text.
+         Replace resources*/drawables/brand_logo.png with your own artwork
+         (that you hold the rights to use) before enabling this. -->
+    <property id="ShowBrandLogo" type="boolean">false</property>
+
     <property id="CustomBackgroundColor" type="number">0xFFFFFF</property>
     <property id="CustomPrimaryTextColor" type="number">0x111111</property>
     <property id="CustomSecondaryTextColor" type="number">0x777777</property>

@@ -5,6 +5,7 @@ import Toybox.Time;
 import Toybox.Time.Gregorian;
 import Toybox.Activity;
 import Toybox.Lang;
+import Toybox.WatchUi;
 
 // Draws hour markers, the branding area, and complications onto the dial.
 // Marker STYLE and which complications are visible are user settings;
@@ -57,9 +58,16 @@ module Dial {
         dc.fillCircle(pt[0], pt[1], r);
     }
 
-    // Subtle brand name (and optional secondary line) between 12 and center.
-    // Absent entirely when BrandName is left blank.
+    // Subtle branding between 12 and center: either a logo image (your own
+    // artwork, dropped into resources*/drawables/brand_logo.png) or plain
+    // text. Absent entirely when neither is enabled/set.
     function drawBranding(dc, geo, theme) {
+        var useLogo = Application.Properties.getValue("ShowBrandLogo");
+        if (useLogo) {
+            drawBrandLogo(dc, geo, theme);
+            return;
+        }
+
         var name = Application.Properties.getValue("BrandName");
         if (name == null || name.equals("")) {
             return;
@@ -67,6 +75,26 @@ module Dial {
 
         dc.setColor(theme[:logo], Graphics.COLOR_TRANSPARENT);
         dc.drawText(geo.centerX, geo.brandY, Graphics.FONT_XTINY, name.toUpper(), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+        var subText = Application.Properties.getValue("BrandSubText");
+        if (subText != null && !subText.equals("")) {
+            dc.setColor(theme[:secondaryText], Graphics.COLOR_TRANSPARENT);
+            dc.drawText(geo.centerX, geo.brandSubY, Graphics.FONT_XTINY, subText, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
+    }
+
+    // Draws Drawables.BrandLogo (a placeholder until you swap it for your
+    // own artwork) centered where the brand name would otherwise sit, sized
+    // at whatever the bitmap's own pixel dimensions are -- no runtime scaling.
+    function drawBrandLogo(dc, geo, theme) {
+        var bitmap = WatchUi.loadResource(Rez.Drawables.BrandLogo);
+        if (bitmap == null) {
+            return;
+        }
+
+        var w = bitmap.getWidth();
+        var h = bitmap.getHeight();
+        dc.drawBitmap(geo.centerX - (w / 2.0), geo.brandY - (h / 2.0), bitmap);
 
         var subText = Application.Properties.getValue("BrandSubText");
         if (subText != null && !subText.equals("")) {
