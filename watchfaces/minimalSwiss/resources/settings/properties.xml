@@ -1,0 +1,24 @@
+<properties>
+
+    <!-- "swiss" | "swatch" | "racing" | "monochrome" | "custom" -->
+    <property id="Theme" type="string">swiss</property>
+
+    <!-- "numerals" | "indices" | "dots" | "combo" -->
+    <property id="MarkerStyle" type="string">combo</property>
+
+    <property id="ShowSecondHand" type="boolean">true</property>
+    <property id="ShowDate" type="boolean">true</property>
+    <property id="ShowBattery" type="boolean">true</property>
+    <property id="ShowHeartRate" type="boolean">false</property>
+
+    <property id="BrandName" type="string"></property>
+    <property id="BrandSubText" type="string"></property>
+
+    <property id="CustomBackgroundColor" type="number">0xFFFFFF</property>
+    <property id="CustomPrimaryTextColor" type="number">0x111111</property>
+    <property id="CustomSecondaryTextColor" type="number">0x777777</property>
+    <property id="CustomMarkerColor" type="number">0x111111</property>
+    <property id="CustomHandColor" type="number">0x111111</property>
+    <property id="CustomAccentColor" type="number">0xC81E1E</property>
+
+</properties>
